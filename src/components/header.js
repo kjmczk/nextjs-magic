@@ -1,8 +1,13 @@
+import { useEffect } from 'react';
 import Link from 'next/link';
 import { useUser } from '../utils/hooks';
 
 const Header = () => {
-  const user = useUser();
+  const { user, error, mutate } = useUser();
+
+  useEffect(() => {
+    if (!error && user === null) mutate();
+  }, [user, error, mutate]);
 
   return (
     <header>
