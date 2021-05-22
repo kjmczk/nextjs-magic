@@ -6,7 +6,11 @@ import { useForm } from 'react-hook-form';
 const LoginForm = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
-  const { handleSubmit, register, errors } = useForm();
+  const {
+    handleSubmit,
+    register,
+    formState: { errors },
+  } = useForm();
 
   const onSubmit = handleSubmit(async (formData) => {
     if (errorMessage) setErrorMessage('');
@@ -41,9 +45,8 @@ const LoginForm = () => {
         <label>Email</label>
         <input
           type="email"
-          name="email"
           placeholder="hello@example.com"
-          ref={register({ required: 'Email is required' })}
+          {...register('email', { required: 'Email is required' })}
         />
         {errors.email && (
           <div role="alert" className="error">
