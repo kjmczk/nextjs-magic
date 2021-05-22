@@ -9,13 +9,13 @@
   },
   "dependencies": {
     "@hapi/iron": "^6.0.0",
-    "@magic-sdk/admin": "^1.2.2",
+    "@magic-sdk/admin": "^1.3.0",
     "cookie": "^0.4.1",
-    "magic-sdk": "^2.1.0",
-    "next": "9.4.4",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-hook-form": "^6.0.0",
-    "swr": "^0.2.3"
+    "magic-sdk": "^4.3.0",
+    "next": "10.2.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-hook-form": "^7.6.4",
+    "swr": "^0.5.6"
   }
 }
