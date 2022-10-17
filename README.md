@@ -2,8 +2,4 @@ This is a [Next.js](https://nextjs.org/) app with passwordless authentication us
 
 ## Tutorial
 
-Passwordless Authentication with Next.js and Magic
-
-- [Medium](https://medium.com/@kjmczk)
-- [DEV](https://dev.to/kjmczk)
-- [KJmczk](https://kjmczk.dev/blog/)
+[Passwordless Authentication with Next.js and Magic](https://medium.com/technest/passwordless-authentication-with-next-js-and-magic-2c9ed2afd701)
